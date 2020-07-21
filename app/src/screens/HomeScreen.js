@@ -21,7 +21,6 @@ const HomeScreen = () => {
             }
             
             setUsers(json.usuarios)
-            console.log(json.usuarios)
         })
     }, []);
 

@@ -46,7 +46,7 @@ router.get('/:nombre', (req, res) => {
 
 })
 
-router.get('/users', (req, res) => {
+router.get('/get/users', (req, res) => {
     
     Usuario.find({})
         .sort('-fecha')
@@ -61,7 +61,7 @@ router.get('/users', (req, res) => {
 
             res.json({
                 ok: true,
-                usuarios
+                usuarios,
             })
         })
 
